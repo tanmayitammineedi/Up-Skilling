@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Event Video Invite</title>
+    <style>
+        #msg {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function videoReady() {
+            document.getElementById("msg").innerHTML = "Video ready to play";
+        }
+
+        window.onbeforeunload = function () {
+            return "You have an unfinished form. Are you sure you want to leave?";
+        };
+    </script>
+</head>
+
+<body>
+    <h2>Event Promo Video</h2>
+
+    <video width="400" controls oncanplay="videoReady()">
+        <source src="event.mp4" type="video/mp4">
+        Your browser does not support video tag.
+    </video>
+
+    <p id="msg"></p>
+
+    <form>
+        <h3>Quick Registration</h3>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+Hello Box
+
+</div>
+
+<br>
+
+<button id="hide">
+
+Hide
+
+</button>
+
+<button id="show">
+
+Show
+
+</button>
+
+<button id="fade">
+
+Fade Out
+
+</button>
+
+<button id="toggle">
+
+Toggle
+
+</button>
+
+<script>
+
+$("#hide").click(function(){
+
+    $(".box").hide();
+
+});
+
+$("#show").click(function(){
+
+    $(".box").show();
+
+});
+
+$("#fade").click(function(){
+
+    $(".box").fadeOut();
+
+});
+
+$("#toggle").click(function(){
+
+    $(".box").toggle();
+
+});
+
+</script>
+
+</body>
+
+</html>

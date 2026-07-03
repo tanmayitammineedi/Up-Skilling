@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script>
+
+const events = [
+
+    {name:"Music Festival", seats:20},
+
+    {name:"Sports Meet", seats:0},
+
+    {name:"Art Exhibition", seats:15}
+
+];
+
+events.forEach(event => {
+
+    if(event.seats > 0)
+
+        console.log(
+        event.name,
+        "Available");
+
+    else
+
+        console.log(
+        event.name,
+        "Full");
+
+});
+
+
+try {
+
+    let seats = -1;
+
+    if(seats < 0)
+
+        throw "Invalid seats";
+
+}
+
+catch(error) {
+
+    console.log(error);
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Original Heading</h1>
+
+<p id="p1">Paragraph 1</p>
+
+<p id="p2">Paragraph 2</p>
+
+<button>
+
+Hide Paragraph
+
+</button>
+
+<script>
+
+$(document).ready(function(){
+
+    $("h1").text("Welcome to Community Portal");
+
+    $("button").click(function(){
+
+        $("#p2").hide();
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>

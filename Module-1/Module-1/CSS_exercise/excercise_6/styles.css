@@ -1,0 +1,35 @@
+/* ===================================
+   Table Styling
+   =================================== */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* ===================================
+   Table Header Styling
+   =================================== */
+th {
+    border: 1px solid #333;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* ===================================
+   Table Data Styling
+   =================================== */
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* ===================================
+   Zebra Striping
+   =================================== */
+tr:nth-child(even) {
+    background-color: #e6f2ff;
+}

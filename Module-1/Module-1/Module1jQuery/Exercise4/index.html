@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<input type="text" id="item">
+
+<button id="add">
+
+Add
+
+</button>
+
+<button id="remove">
+
+Remove All
+
+</button>
+
+<ul>
+
+</ul>
+
+<script>
+
+$("#add").click(function(){
+
+    let value =
+
+    $("#item").val();
+
+    $("ul").append(
+
+    "<li>"+value+"</li>"
+
+    );
+
+});
+
+
+$("#remove").click(function(){
+
+    $("ul").empty();
+
+});
+
+</script>
+
+</body>
+
+</html>
